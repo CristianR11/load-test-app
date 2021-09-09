@@ -57,7 +57,7 @@ app.use(function fiveHundredHandler(err, req, res, next) {
 })
 
 // Start server
-app.listen(8080, function (err) {
+app.listen(80, function (err) {
     if (err) {
         return console.error(err)
     }
