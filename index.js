@@ -36,7 +36,6 @@ app.get('/', (req, res) => {
     if (isNaN(n))
         return res.status(400).send('Missing Params');
     res.status(200).send('Found ' + formatNum(countPrimeNums(n)) + ' prime numbers under ' + formatNum(n) + '\n');
-    res.sendFile(../image.png);
 });
 
 // this path deliberately crashes the server so we could test the
